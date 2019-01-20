@@ -292,7 +292,8 @@
           margin-bottom: 30px;
           .flex_wrap{
             font{
-              font-size: 14px;
+              width: calc(100% - 50px);
+              font-size: 12px;
               line-height: 1.5;
               span{
                 display: block;

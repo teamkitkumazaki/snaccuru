@@ -36,7 +36,7 @@
             font-size: 20px;
             font-weight: bold;
             letter-spacing: 1.8px;
-            color: #9f6146;
+            color: #D88037;
           }
           .initial{
             font-size: 14px;
@@ -45,7 +45,7 @@
               display: inline-block;
               padding: 0 3px;
               font-size: 18px;
-              color: #9f6146;
+              color: #D88037;
             }
           }
           .small{
@@ -164,6 +164,7 @@
                   padding-bottom: 7px;
                   margin-bottom: 7px;
                   border-bottom: 1px dotted #d8d8d8;
+                  font-size: 16px;
 
                   &:last-child {
                     padding-bottom: 0;
@@ -192,26 +193,26 @@
 
           &.light {
             .plan_ttl {
-              background: #9f6146;
+              background: #D88037;
             }
 
             h3 {
               &::after {
-                background: #9f6146;
+                background: #D88037;
               }
             }
 
             .flex_item {
               .item_ttl {
-                border: 1px solid #9f6146;
-                color: #9f6146;
+                border: 1px solid #D88037;
+                color: #D88037;
               }
 
               .item_txt {
                 ul {
                   li {
                     span {
-                      color: #9f6146;
+                      color: #D88037;
                     }
                   }
                 }
@@ -542,7 +543,7 @@
                     padding-bottom: 5px;
                     margin-bottom: 5px;
                     border-bottom: 1px dotted #d8d8d8;
-                    font-size: 12px;
+                    font-size: 16px;
                   }
                 }
               }

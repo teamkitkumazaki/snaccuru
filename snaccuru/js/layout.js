@@ -40,9 +40,11 @@ $(function() {
     function humMenuShift() {
       if (menuState == 0) {
         $('#spHeader').addClass('menu_open');
+        $('header').addClass('opened');
         menuState = 1;
       } else {
         $('#spHeader').removeClass('menu_open');
+        $('header').removeClass('opened');
         menuState = 0;
       }
     }
@@ -58,9 +60,9 @@ $(function() {
           humMenuShift();
         }
       });
-      $('#spNav a').on({
+      $('#spHeader nav a').on({
         'click': function() {
-          humMenuShift();
+            humMenuShift();
         }
       });
     }
@@ -90,6 +92,7 @@ $(function() {
       var timer = false;
       $(window).on({
         'scroll': function() {
+          /*
           $(".effect").each(function(index) {
             var scroll = $(window).scrollTop();
             var windowHeight = $(window).height();
@@ -98,6 +101,7 @@ $(function() {
               $(this).addClass('animated');
             };
           });
+          */
           if (timer !== false) {
             clearTimeout(timer);
           }
@@ -236,6 +240,7 @@ if (document.getElementById('faq')) {
     var button = [];
     var scrollObj = [];
     var selectorName = [];
+    var w = $(window).width();
 
     function windowMove(e) {
       if (e < 0) {
@@ -247,10 +252,19 @@ if (document.getElementById('faq')) {
         var scrollHeight = $(scrollObj[e]).offset().top;
       }
 
-      $("html, body").stop().animate({
-        scrollTop: scrollHeight - 80
-      }, 500);
-      return false;
+      if( w > 750){
+        $("html, body").stop().animate({
+          scrollTop: scrollHeight - 80
+        }, 500);
+        return false;
+      }else{
+        $("html, body").stop().animate({
+          scrollTop: scrollHeight - 50
+        }, 500);
+        return false;
+      }
+
+
     }
 
     function init() {
