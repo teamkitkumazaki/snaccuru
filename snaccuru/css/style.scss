@@ -1,0 +1,109 @@
+@charset "UTF-8";
+/* ----- Google Fonts ----- */
+@font-face { /* IE用 */
+    font-family: 'abel';
+		font-weight: 700;
+    src: url('../fonts/abel.eot'),url('../fonts/abel.woff') format('woff'),
+    url('../fonts/abel.ttf') format('truetype'),
+}
+@font-face { /* IE用 */
+    font-family: 'dance';
+		font-weight: 500;
+    src: url('../fonts/dancingscript.eot'),url('../fonts/dancingscript.woff') format('woff'),
+    url('../fonts/dancingscript.ttf') format('truetype'),
+}
+@font-face {
+   font-family: 'Noto Sans Japanese';
+   font-style: normal;
+   font-weight: bold;
+   src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff2) format('woff2'),
+        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.woff) format('woff'),
+        url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Bold.otf) format('opentype');
+ }
+ @font-face {
+    font-family: 'Noto Sans Japanese';
+    font-style: normal;
+    font-weight: normal;
+    src: url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff2) format('woff2'),
+         url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.woff) format('woff'),
+         url(https://fonts.gstatic.com/ea/notosansjapanese/v6/NotoSansJP-Regular.otf) format('opentype');
+  }
+$basicBeige : #B7A58B;
+$basicBeige02: #F4F4F0;
+$basicGray: #f4f4f4;
+@mixin abel {
+	font-family: 'abel';
+  font-weight: 400;
+}
+@mixin dance {
+	font-family: 'dance';
+  font-weight: 700;
+}
+
+@mixin basicP {
+	font-size: 14px;
+	line-height: 2;
+	letter-spacing: 0.1em;
+}
+@mixin waku {
+	max-width: 1080px;
+	margin-left: auto;
+	margin-right: auto;
+  @media screen and (max-width: 1080px){
+    max-width: 720px;
+  }
+  @media screen and (max-width: 740px){
+    max-width: 90vw;
+  }
+}
+@mixin flexSet {
+	display: flex;
+	flex-wrap: wrap;
+}
+@mixin bgSet{
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+@mixin hover{
+  transition: opacity .5s;
+  &:hover{
+    opacity: 0.6;
+  }
+}
+html{
+  scroll-behavior: smooth;
+}
+body {
+	font-size: 14px;
+	line-height: 1;
+  background: #fff;
+  color: #444;
+	font-family: 'Noto Sans Japanese', 游ゴシック体, "Yu Gothic", YuGothic, "ヒラギノ角ゴシック Pro", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+.effect{
+  opacity: 0;
+  transition: transform 2s cubic-bezier(0.77, 0, 0.175,1),
+  opacity 2s cubic-bezier(0.77, 0, 0.175,1);
+  /*-webkit-animation: anim 0s linear 1.5s 1 normal;*/
+}
+.animated{
+  opacity: 1;
+}
+@import 'reset.scss';
+@import 'header.scss';
+@import 'contents.scss';
+@import 'main.scss';
+@import 'concept.scss';
+@import 'service.scss';
+@import 'tendency.scss';
+@import 'lineups.scss';
+@import 'faq.scss';
+@import 'case.scss';
+@import 'news.scss';
+@import 'plans.scss';
+@import 'contact.scss';
+@import 'footer.scss';
+@import 'animation.scss';
+@import 'form.scss';

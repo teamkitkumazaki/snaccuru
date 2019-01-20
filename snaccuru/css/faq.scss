@@ -1,0 +1,139 @@
+#contents{
+  #faq{
+    padding: 80px 0;
+    .ttl_wrap{
+      text-align: center;
+    }
+    .ques_wrap{
+      margin-top: 120px;
+      @include waku;
+      .toggle_item{
+        height: 60px;
+        margin-bottom: 10px;
+        transition: height .5s;
+        overflow: hidden;
+        a.toggle_button{
+          padding: 10px 15px;
+          font-size: 16px;
+          line-height: 30px;
+          margin-bottom: 5px;
+          color: #444;
+          border: 1px solid #444;
+          border-radius: 5px;
+          display: block;
+          position: relative;
+          padding-left: 50px;
+          box-sizing: border-box;
+          background-repeat: no-repeat;
+          background-image: url(../img/caret.png);
+          background-size: 18px;
+          background-position: center right 15px;
+          &.active{
+            background-image: url(../img/caret_reverse.png);
+          }
+          &::before{
+            position: absolute;
+            top:0;
+            bottom:0;
+            left: 15px;
+            margin: auto;
+            display: block;
+            content: "Q.";
+            @include abel;
+            font-size: 30px;
+            height: 30px;
+            letter-spacing: 2.3px;
+            color: #77aa00;
+          }
+        }
+        .toggle_contents{
+          padding: 15px 0;
+          position: relative;
+          &::before{
+            position: absolute;
+            top: 15px;
+            left: 15px;
+            margin: auto;
+            display: block;
+            content: "A.";
+            @include abel;
+            font-size: 30px;
+            height: 30px;
+            letter-spacing: 2.3px;
+            color: #77aa00;
+          }
+          p{
+            padding-left: 50px;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 2.3px;
+            span{
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1100px){
+    #faq{
+      .ques_wrap{
+        margin-top: 80px;
+      }
+    }
+  }
+  @media screen and (max-width: 750px){
+    #faq{
+      .ques_wrap{
+        margin-top: 60px;
+        @include waku;
+        .toggle_item{
+          height: 72px;
+          margin-bottom: 10px;
+          a.toggle_button{
+            padding: 10px 40px;
+            font-size: 14px;
+            line-height: 25px;
+            height: 70px;
+            margin-bottom: 5px;
+            background-size: 15px;
+            background-position: center right 10px;
+            @media screen and (max-width: 350px){
+              font-size: 12px;
+            }
+            &.row1{
+              padding: 20px 40px;
+            }
+            &::before{
+              left: 15px;
+              @include abel;
+              font-size: 25px;
+              height: 25px;
+              letter-spacing: 2px;
+            }
+          }
+          .toggle_contents{
+            padding: 15px 0;
+            position: relative;
+            &::before{
+              top: 15px;
+              left: 15px;
+              font-size: 25px;
+              height: 25px;
+              letter-spacing: 2px;
+            }
+            p{
+              padding-left: 40px;
+              font-size: 12px;
+              line-height: 1.6;
+              letter-spacing: 1.6px;
+              span{
+                display: block;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
