@@ -303,7 +303,8 @@ if (document.getElementById('faq')) {
     dots: false,
     slidesToShow: 4,
     centerMode: false,
-    autoplay: false,
+    autoplay: true,
+    speed: 1000,
     responsive: [
       {
         breakpoint: 1100,

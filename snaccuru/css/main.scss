@@ -127,7 +127,7 @@
     #main{
       .main_inner{
         width: 100%;
-        height: calc(100vh - 120px);
+        height: calc(100vh - 200px);
         margin-top: 60px;
         .concept_txt{
           @include abel;
@@ -135,6 +135,7 @@
           letter-spacing: 2px;
           line-height: 40px;
           height: 280px;
+          bottom: 150px;
         }
         .main_img{
           width: calc(100% - 40px);

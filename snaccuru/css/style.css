@@ -639,7 +639,7 @@ header {
 @media screen and (max-width: 750px) {
   #contents #main .main_inner {
     width: 100%;
-    height: calc(100vh - 120px);
+    height: calc(100vh - 200px);
     margin-top: 60px; }
     #contents #main .main_inner .concept_txt {
       font-family: 'abel';
@@ -647,7 +647,8 @@ header {
       font-size: 15px;
       letter-spacing: 2px;
       line-height: 40px;
-      height: 280px; }
+      height: 280px;
+      bottom: 150px; }
     #contents #main .main_inner .main_img {
       width: calc(100% - 40px);
       height: 100%;
@@ -1635,6 +1636,28 @@ header {
 #contents #news {
   padding: 80px 0;
   background: #f4f4f4; }
+  #contents #news .news_flex {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between; }
+    @media screen and (max-width: 1100px) {
+      #contents #news .news_flex {
+        max-width: 720px; } }
+    @media screen and (max-width: 740px) {
+      #contents #news .news_flex {
+        max-width: 90vw; } }
+    #contents #news .news_flex .news_left {
+      width: 680px; }
+    #contents #news .news_flex .news_right {
+      width: 300px; }
   #contents #news .ttl_wrap {
     text-align: center; }
   #contents #news .news_wrap {
@@ -1694,6 +1717,14 @@ header {
 @media screen and (max-width: 750px) {
   #contents #news {
     padding: 80px 0; }
+    #contents #news .news_flex {
+      display: block; }
+      #contents #news .news_flex .news_left {
+        width: 100%;
+        margin-bottom: 40px; }
+      #contents #news .news_flex .news_right {
+        width: 300px;
+        margin: 0 auto; }
     #contents #news .news_wrap {
       margin-top: 60px; }
       #contents #news .news_wrap ul li {
