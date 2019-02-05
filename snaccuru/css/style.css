@@ -974,6 +974,15 @@ header {
         font-size: 18px;
         font-weight: 500;
         color: #77aa00; }
+      #contents #tendency .txt_wrap p.detail {
+        color: #aaa;
+        font-size: 10px;
+        letter-spacing: 2px;
+        margin-top: 5px; }
+        #contents #tendency .txt_wrap p.detail span {
+          display: block;
+          font-size: 12px;
+          margin-bottom: 5px; }
   #contents #tendency .flex_wrap {
     max-width: 1080px;
     margin-left: auto;
@@ -1656,63 +1665,82 @@ header {
         max-width: 90vw; } }
     #contents #news .news_flex .news_left {
       width: 680px; }
-    #contents #news .news_flex .news_right {
-      width: 300px; }
-  #contents #news .ttl_wrap {
-    text-align: center; }
-  #contents #news .news_wrap {
-    max-width: 1080px;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 100px; }
-    @media screen and (max-width: 1100px) {
-      #contents #news .news_wrap {
-        max-width: 720px; } }
-    @media screen and (max-width: 740px) {
-      #contents #news .news_wrap {
-        max-width: 90vw; } }
-    #contents #news .news_wrap ul li {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center;
-      margin-bottom: 12px;
-      padding-bottom: 12px;
-      border-bottom: 1px dotted #aaa; }
-      #contents #news .news_wrap ul li:last-child {
-        margin-bottom: 0;
-        padding-bottom: 0;
-        border-bottom: 0; }
-      #contents #news .news_wrap ul li .img_wrap {
-        width: 150px;
-        margin-right: 20px; }
-      #contents #news .news_wrap ul li .txt_wrap {
-        width: calc(100% - 170px); }
-        #contents #news .news_wrap ul li .txt_wrap .tag {
-          display: inline-block;
-          padding: 7px 10px;
-          font-family: 'abel';
-          font-weight: 400;
-          color: #fff;
-          font-size: 12px;
-          background-color: #be9131;
-          border-radius: 5px;
-          margin-right: 10px;
-          letter-spacing: 2.1px; }
-        #contents #news .news_wrap ul li .txt_wrap .date {
-          font-family: 'abel';
-          font-weight: 400;
-          font-size: 14px;
-          letter-spacing: 2.1px; }
-        #contents #news .news_wrap ul li .txt_wrap p {
-          margin-top: 10px;
-          font-size: 14px;
-          line-height: 1.71;
-          letter-spacing: 1.6px; }
+      #contents #news .news_flex .news_left ul li {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        margin-bottom: 12px;
+        padding-bottom: 12px;
+        border-bottom: 1px dotted #aaa; }
+        #contents #news .news_flex .news_left ul li:last-child {
+          margin-bottom: 0;
+          padding-bottom: 0;
+          border-bottom: 0; }
+        #contents #news .news_flex .news_left ul li .img_wrap {
+          width: 150px;
+          margin-right: 20px; }
+          #contents #news .news_flex .news_left ul li .img_wrap a {
+            -webkit-transition: opacity .5s;
+            -o-transition: opacity .5s;
+            transition: opacity .5s; }
+            #contents #news .news_flex .news_left ul li .img_wrap a:hover {
+              opacity: 0.6; }
+        #contents #news .news_flex .news_left ul li .txt_wrap {
+          width: calc(100% - 170px); }
+          #contents #news .news_flex .news_left ul li .txt_wrap .tag {
+            display: inline-block;
+            padding: 7px 10px;
+            font-family: 'abel';
+            font-weight: 400;
+            color: #fff;
+            font-size: 12px;
+            background-color: #be9131;
+            border-radius: 5px;
+            margin-right: 10px;
+            letter-spacing: 2.1px; }
+          #contents #news .news_flex .news_left ul li .txt_wrap .date {
+            font-family: 'abel';
+            font-weight: 400;
+            font-size: 14px;
+            letter-spacing: 2.1px; }
+          #contents #news .news_flex .news_left ul li .txt_wrap p {
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 1.6px; }
+          #contents #news .news_flex .news_left ul li .txt_wrap a {
+            display: block;
+            margin-top: 10px;
+            font-size: 14px;
+            line-height: 1.71;
+            letter-spacing: 1.6px;
+            color: #444;
+            -webkit-transition: opacity .5s;
+            -o-transition: opacity .5s;
+            transition: opacity .5s; }
+            #contents #news .news_flex .news_left ul li .txt_wrap a:hover {
+              opacity: 0.6; }
+  #contents #news .news_right {
+    width: 300px; }
+
+#contents .ttl_wrap {
+  text-align: center; }
+
+#contents .news_wrap {
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+  @media screen and (max-width: 1100px) {
+    #contents .news_wrap {
+      max-width: 720px; } }
+  @media screen and (max-width: 740px) {
+    #contents .news_wrap {
+      max-width: 90vw; } }
 
 @media screen and (max-width: 750px) {
   #contents #news {
@@ -1722,37 +1750,42 @@ header {
       #contents #news .news_flex .news_left {
         width: 100%;
         margin-bottom: 40px; }
+        #contents #news .news_flex .news_left .news_wrap {
+          margin-top: 60px; }
+          #contents #news .news_flex .news_left .news_wrap ul li {
+            margin-bottom: 12px;
+            padding-bottom: 12px;
+            border-bottom: 1px dotted #aaa; }
+            #contents #news .news_flex .news_left .news_wrap ul li:last-child {
+              margin-bottom: 0;
+              padding-bottom: 0;
+              border-bottom: 0; }
+            #contents #news .news_flex .news_left .news_wrap ul li .img_wrap {
+              width: 110px;
+              margin-right: 10px; }
+            #contents #news .news_flex .news_left .news_wrap ul li .txt_wrap {
+              width: calc(100% - 120px); }
+              #contents #news .news_flex .news_left .news_wrap ul li .txt_wrap .tag {
+                padding: 7px;
+                font-size: 10px;
+                margin-right: 10px;
+                letter-spacing: 1px; }
+              #contents #news .news_flex .news_left .news_wrap ul li .txt_wrap .date {
+                font-size: 12px;
+                letter-spacing: 1.7px; }
+              #contents #news .news_flex .news_left .news_wrap ul li .txt_wrap p {
+                margin-top: 5px;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: 1.4px; }
+              #contents #news .news_flex .news_left .news_wrap ul li .txt_wrap a {
+                margin-top: 5px;
+                font-size: 12px;
+                line-height: 1.5;
+                letter-spacing: 1.4px; }
       #contents #news .news_flex .news_right {
         width: 300px;
-        margin: 0 auto; }
-    #contents #news .news_wrap {
-      margin-top: 60px; }
-      #contents #news .news_wrap ul li {
-        margin-bottom: 12px;
-        padding-bottom: 12px;
-        border-bottom: 1px dotted #aaa; }
-        #contents #news .news_wrap ul li:last-child {
-          margin-bottom: 0;
-          padding-bottom: 0;
-          border-bottom: 0; }
-        #contents #news .news_wrap ul li .img_wrap {
-          width: 110px;
-          margin-right: 10px; }
-        #contents #news .news_wrap ul li .txt_wrap {
-          width: calc(100% - 120px); }
-          #contents #news .news_wrap ul li .txt_wrap .tag {
-            padding: 7px;
-            font-size: 10px;
-            margin-right: 10px;
-            letter-spacing: 1px; }
-          #contents #news .news_wrap ul li .txt_wrap .date {
-            font-size: 12px;
-            letter-spacing: 1.7px; }
-          #contents #news .news_wrap ul li .txt_wrap p {
-            margin-top: 5px;
-            font-size: 12px;
-            line-height: 1.5;
-            letter-spacing: 1.4px; } }
+        margin: 0 auto; } }
 
 #contents #plans {
   margin-top: 120px;
