@@ -228,9 +228,7 @@ header {
     header .header_inner #humMenu {
       display: none; }
   header.rolled {
-    background: #fff;
-    -webkit-box-shadow: rgba(204, 204, 204, 0.25) 1px 3px 2px 1px;
-    box-shadow: rgba(204, 204, 204, 0.25) 1px 3px 2px 1px; }
+    background: #f8f8f8; }
     header.rolled .header_inner {
       height: 80px; }
   header.opened {
@@ -691,7 +689,7 @@ header {
 
 @media screen and (max-width: 1100px) {
   #contents #concept {
-    margin-top: 120px; }
+    margin-top: 60px; }
     #contents #concept .flex_wrap {
       display: block; }
       #contents #concept .flex_wrap .img_wrap {
@@ -722,7 +720,7 @@ header {
 
 @media screen and (max-width: 750px) {
   #contents #concept {
-    margin-top: 100px;
+    margin-top: 20px;
     padding: 60px 0 0; }
     #contents #concept .flex_wrap .txt_wrap .sp_img {
       max-width: 1080px;
@@ -2624,20 +2622,21 @@ footer {
         footer .footer_inner .footer_right .aboutus .corp_name {
           font-size: 18px;
           letter-spacing: 2px;
-          margin-bottom: 25px; }
+          margin-bottom: 35px; }
         footer .footer_inner .footer_right .aboutus .about_item {
-          margin-bottom: 20px; }
+          margin-bottom: 30px; }
           footer .footer_inner .footer_right .aboutus .about_item .ttl {
             letter-spacing: 1.7px;
             margin-bottom: 5px;
             padding-bottom: 5px;
-            border-bottom: 1px solid #444; }
+            border-bottom: 1px solid #444;
+            font-size: 12px; }
             footer .footer_inner .footer_right .aboutus .about_item .ttl span {
               display: inline-block;
               margin-right: 15px;
               font-family: 'abel';
               font-weight: 400;
-              font-size: 20px;
+              font-size: 16px;
               letter-spacing: 2.5px; }
           footer .footer_inner .footer_right .aboutus .about_item p {
             font-size: 12px;
@@ -2648,11 +2647,11 @@ footer {
         text-align: center; }
         footer .footer_inner .footer_left .footer_logo {
           width: 80%;
-          margin: 0 auto 30px; }
+          margin: 0 auto 15px; }
         footer .footer_inner .footer_left .catch {
           font-family: 'abel';
           font-weight: 400;
-          font-size: 20px;
+          font-size: 16px;
           line-height: normal;
           letter-spacing: 2.8px; }
         footer .footer_inner .footer_left .sns_wrap ul {

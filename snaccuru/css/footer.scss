@@ -107,20 +107,21 @@ footer{
           .corp_name{
             font-size: 18px;
             letter-spacing: 2px;
-            margin-bottom: 25px;
+            margin-bottom: 35px;
           }
           .about_item{
-            margin-bottom: 20px;
+            margin-bottom: 30px;
             .ttl{
               letter-spacing: 1.7px;
               margin-bottom: 5px;
               padding-bottom: 5px;
               border-bottom: 1px solid #444;
+              font-size: 12px;
                 span{
                   display: inline-block;
                   margin-right: 15px;
                   @include abel;
-                  font-size: 20px;
+                  font-size: 16px;
                   letter-spacing: 2.5px;
                 }
             }
@@ -137,11 +138,11 @@ footer{
         text-align: center;
         .footer_logo{
           width: 80%;
-          margin: 0 auto 30px;
+          margin: 0 auto 15px;
         }
         .catch{
           @include abel;
-          font-size: 20px;
+          font-size: 16px;
           line-height: normal;
           letter-spacing: 2.8px;
         }
