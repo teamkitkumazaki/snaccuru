@@ -1,0 +1,397 @@
+#page {
+  position: relative;
+  #backBg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: -50vh;
+    left:0;
+    right:0;
+    margin: auto;
+    overflow: hidden;
+    #obj{
+      position: relative;
+      width: 100%;
+      &::before {
+        content: '';
+        position: absolute;
+        top:50%;
+        left: 0;
+        width: 150%;
+        height: 100vh;
+        margin: 3% -25% 0;
+        transform: rotate(5deg);
+        z-index: 1;
+        background: #F4F4F0;
+        transition: height 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+      }
+    }
+
+  }
+
+  #article {
+    position: relative;
+    z-index: 10;
+    overflow: hidden;
+    .inner {
+      @include waku;
+      @include flexSet;
+      justify-content: space-between;
+
+      #contains {
+        width: 760px;
+
+        .main_ttl_wrap {
+          margin-bottom: 30px;
+
+          .date {
+            display: block;
+            @include rale-b;
+            font-size: 18px;
+            letter-spacing: 3px;
+            margin-bottom: 15px;
+          }
+
+          .main_ttl {
+            font-size: 30px;
+            letter-spacing: 0.9px;
+            line-height: 1.5;
+            position: relative;
+            &::before{
+              display: block;
+              content: "";
+              position: absolute;
+              left: -30px;
+              top:-50px;
+              height: 200%;
+              width: 100vw;
+              @include bgSet;
+              background-size: 1222px;
+              background-image: url(../img/txt_news.png);
+            }
+            span{
+              position: relative;
+              z-index: 10;
+            }
+          }
+        }
+
+        .main_img {
+          width: 100%;
+          height: 400px;
+          margin-bottom: 20px;
+          @include bgSet;
+          img{
+            display: none;
+          }
+        }
+
+        .img_list {
+          margin-bottom: 50px;
+
+          ul {
+            @include flexSet;
+
+            li {
+              width: 32%;
+              margin-right: 2%;
+
+              &:last-child {
+                margin-right: 0;
+              }
+            }
+          }
+        }
+
+        .article_txt {
+          p {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.7;
+            letter-spacing: 1.5px;
+            margin-bottom: 1.2em;
+          }
+        }
+        .artist_info{
+          margin-top: 50px;
+          .info_ttl{
+            text-align: left;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 3px;
+            background: #f4f4f4;
+            padding: 10px;
+            margin-bottom: 20px;
+          }
+          .artist_name{
+            font-size: 24px;
+            line-height: 1.08;
+            letter-spacing: 3.3px;
+            margin-bottom: 15px;
+            padding: 0 10px;
+          }
+          .sns_wrap{
+            padding: 0 10px;
+            @include flexSet;
+            align-items: center;
+            a{
+              display: block;
+              @include hover;
+              @include bgSet;
+              margin-right: 20px;
+              &.showroom{
+                width: 155px;
+                height: 27px;
+                background-image: url(../img/article/icn_showroom.svg);
+              }
+              &.instagram{
+                width: 25px;
+                height: 25px;
+                background-image: url(../img/article/icn_instagram.svg);
+              }
+              &.twitter{
+                width: 25px;
+                height: 25px;
+                background-image: url(../img/article/icn_twitter.svg);
+              }
+            }
+          }
+        }
+        .link_button{
+          margin: 60px 0;
+          @include flexSet;
+          justify-content: space-between;
+          a{
+            display: block;
+            width: 365px;
+            @include rale-b;
+            font-weight: 400;
+            font-size: 18px;
+            height: 70px;
+            line-height: 70px;
+            letter-spacing: 2.7px;
+            box-sizing: border-box;
+            @include hover;
+            text-align: center;
+            span{
+              display: inline-block;
+              position: relative;
+              &::before{
+                display: block;
+                content: "";
+                position: absolute;
+                left:0;
+                top:0;
+                bottom:0;
+                margin: auto;
+                @include bgSet;
+              }
+            }
+            &.back{
+              color: #222;
+              border: 1px solid #222;
+              span{
+                padding-left: 45px;
+                &::before{
+                  width: 30px;
+                  height: 30px;
+                  background-image: url(../img/article/backbutton.png);
+                  background-size: 25px;
+                }
+              }
+            }
+            &.all{
+              background: #222;
+              color: #fff;
+              span{
+                padding-left: 40px;
+                &::before{
+                  width: 25px;
+                  height: 25px;
+                  background-image: url(../img/article/all_article.png);
+                  background-size: 20px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  footer{
+    .footer_inner{
+      margin-bottom: 40px;
+    }
+  }
+}
+
+@media screen and (max-width: 1100px){
+  #page {
+    #article {
+      .inner {
+        display: block;
+
+        #contains {
+          width: 100%;
+          margin-bottom: 80px;
+
+          .main_img {
+            height: 350px;
+          }
+          .artist_info{
+            margin-top: 50px;
+          }
+          .link_button{
+            margin: 60px 0;
+            a{
+              width: 48%;
+              height: 60px;
+              line-height: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 750px){
+  #page {
+    #backBg {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: -50vh;
+      left:0;
+      right:0;
+      margin: auto;
+      overflow: hidden;
+      #obj{
+        position: relative;
+        width: 100%;
+        &::before {
+          content: '';
+          position: absolute;
+          top:50%;
+          left: 0;
+          width: 150%;
+          height: 100vh;
+          margin: 3% -25% 0;
+          transform: rotate(5deg);
+          z-index: 1;
+          background: #F4F4F0;
+          transition: height 1.5s cubic-bezier(0.77, 0, 0.175, 1);
+        }
+      }
+
+    }
+
+    #article {
+      position: relative;
+      z-index: 10;
+      .inner {
+
+        #contains {
+          width: 100%;
+
+          .main_ttl_wrap {
+            margin-bottom: 25px;
+
+            .date {
+              font-size: 14px;
+              letter-spacing: 2px;
+              margin-bottom: 10px;
+            }
+
+            .main_ttl {
+              font-size: 20px;
+              letter-spacing: 0.9px;
+              &::before{
+                left: -5%;
+                top: -15%;
+                height: 200%;
+                width: 120vw;
+                background-size: 120vw;
+              }
+            }
+          }
+
+          .main_img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            background-image: none;
+            img{
+              display: block;
+            }
+          }
+
+          .img_list {
+            margin-bottom: 20px;
+          }
+
+          .article_txt {
+            p {
+              font-size: 13px;
+            }
+          }
+          .artist_info{
+            margin-top: 50px;
+            .info_ttl{
+              font-size: 16px;
+              letter-spacing: 2px;
+              margin-bottom: 15px;
+            }
+            .artist_name{
+              font-size: 20px;
+              letter-spacing: 2px;
+              margin-bottom: 15px;
+            }
+            .sns_wrap{
+              a{
+                margin-right: 15px;
+              }
+            }
+          }
+          .link_button{
+            margin: 50px 0;
+            display: block;
+            a{
+              display: block;
+              width: 100%;
+              @include rale-b;
+              font-weight: 400;
+              font-size: 14px;
+              height: 55px;
+              line-height: 55px;
+              letter-spacing: 2px;
+              &.back{
+                color: #222;
+                border: 1px solid #222;
+                margin-bottom: 10px;
+                span{
+                  padding-left: 45px;
+                  &::before{
+                    width: 30px;
+                    height: 30px;
+                    background-image: url(../img/article/backbutton.png);
+                    background-size: 25px;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    footer{
+      .footer_inner{
+        text-align: center;
+        margin-bottom: 0px;
+        .footer_upper .footer_logo{
+          margin: 0 auto 20px;
+        }
+      }
+    }
+  }
+}

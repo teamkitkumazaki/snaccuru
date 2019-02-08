@@ -1,0 +1,258 @@
+#formWrap{
+  @include pl60;
+  position: relative;
+  z-index: 10;
+  .form_wrap{
+      margin-bottom: 40px;
+      label{
+        display: block;
+        margin-bottom: 10px;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 1.3px;
+      }
+      input[type="text"],
+      input[type="tel"],
+      input[type="email"]{
+        width: 100%;
+         display: block;
+         padding: 10px;
+         border: solid 1px #888;
+      }
+      &.confirm_wrap{
+        .confirmButton{
+          input[type="submit"]{
+            display: inline-block;
+            background: #222;
+            width: 100%;
+            height: 60px;
+            line-height: 58px;
+            color: #fff;
+            font-size: 18px;
+            letter-spacing: 1px;
+            font-weight: bold;
+            border: none;
+            appearance: none;
+            transition: all 0.5s;
+            border-radius: 0;
+            transition: background .5s;
+          }
+
+        }
+        &.disable{
+          pointer-events: none;
+          .confirmButton{
+            input[type="submit"]{
+              background: #aaa;
+            }
+          }
+        }
+      }
+
+      select{
+        width: 100%;
+        box-sizing: border-box;
+        appearance: none;
+        padding: 10px 15px;
+        border-radius: 0;
+        background-color: #fff;
+        background-image: url(../img/select_caret.jpg);
+        background-size: 50px;
+        background-position: center right;
+        background-repeat: no-repeat;
+        display: block;
+        border: solid 1px #888;
+      }
+      textarea{
+        width: 100%;
+        height: 200px;
+        border: 1px solid #888;
+        line-height: 1.5;
+        box-sizing: border-box;
+        padding: 10px 15px;
+        appearance: none;
+        box-shadow: none;
+      }
+    .flex_wrap{
+        @include flexSet;
+        .form_left{
+          width: 370px;
+          margin-right: 30px;
+        }
+        .form_right{
+          width: 370px;
+        }
+    }
+    .send_wrap{
+      @include flexSet;
+      justify-content: space-between;
+      #backButton{
+        width: 49% !important;
+        display: inline-block;
+        background: #f1f1f1;
+        width: 100%;
+        height: 60px;
+        line-height: 58px;
+        color: #222;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        border: none;
+        appearance: none;
+        transition: all 0.5s;
+        border-radius: 0;
+      }
+      input[type="submit"]{
+        width: 49% !important;
+        display: inline-block;
+        background: #222;
+        width: 100%;
+        height: 60px;
+        line-height: 58px;
+        color: #fff;
+        font-size: 18px;
+        letter-spacing: 1px;
+        font-weight: bold;
+        border: none;
+        appearance: none;
+        transition: all 0.5s;
+        border-radius: 0;
+        transition: background .5s;
+      }
+    }
+  }
+  .policy{
+    .wpcf7-list-item-label{
+      display: none;
+    }
+    a{
+      display: inline-block;
+      color: #068acc;
+      padding-right: 0.3em;
+    }
+  }
+}
+
+@media screen and (max-width: 1080px){
+  #formWrap{
+    @include pl60;
+    position: relative;
+    z-index: 10;
+    .form_wrap{
+        margin-bottom: 40px;
+        label{
+          display: block;
+          margin-bottom: 10px;
+          font-size: 16px;
+          font-weight: bold;
+          letter-spacing: 1.3px;
+        }
+      .flex_wrap{
+          .form_left{
+            width: 48%;
+            margin-right: 4%;
+          }
+          .form_right{
+            width: 48%;
+          }
+      }
+    }
+    .policy{
+      a{
+        display: inline-block;
+        color: #068acc;
+        padding: 0 0.3em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 730px){
+  #formWrap{
+    .form_wrap{
+        margin-bottom: 40px;
+        label{
+          font-size: 16px;
+          letter-spacing: 1.3px;
+        }
+      .flex_wrap{
+        display: block;
+        margin-bottom: 0;
+          .form_left{
+            width: 100%;
+            margin-right: 0px;
+            margin-bottom: 30px;
+          }
+          .form_right{
+            width: 100%;
+            margin-bottom: 30px;
+          }
+      }
+      .send_wrap{
+        display: block;
+        #backButton{
+          width: 100% !important;
+          display: inline-block;
+          background: #f1f1f1;
+          width: 100%;
+          height: 60px;
+          line-height: 58px;
+          color: #222;
+          font-size: 18px;
+          letter-spacing: 1px;
+          font-weight: bold;
+          border: none;
+          appearance: none;
+          transition: all 0.5s;
+          border-radius: 0;
+          margin-bottom: 10px;
+          &:focus{
+            outline: none;
+          }
+        }
+        input[type="submit"]{
+          width: 100% !important;
+          display: inline-block;
+          background: #222;
+          width: 100%;
+          height: 60px;
+          line-height: 58px;
+          color: #fff;
+          font-size: 18px;
+          letter-spacing: 1px;
+          font-weight: bold;
+          border: none;
+          appearance: none;
+          transition: all 0.5s;
+          border-radius: 0;
+          &:focus{
+            outline: none;
+          }
+        }
+      }
+    }
+    .policy{
+      font-size: 12px;
+      .flex_check{
+        @include flexSet;
+        justify-content: space-between;
+        input[type="checkbox"]{
+          display: block;
+          margin-top: 7px;
+          margin-left: 10px;
+        }
+        .mwform-checkbox-field-text{
+          display: block;
+          width: calc(100% - 35px);
+          line-height: 1.8;
+        }
+        a{
+          line-height: 1.8;
+          padding: 0;
+          padding-right: 0.2em;
+        }
+      }
+
+    }
+  }
+}

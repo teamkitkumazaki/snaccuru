@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="83px" viewBox="0 0 77 83" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 51.3 (57544) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 19</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M3,26 L0,26 L0,17 C-1.14980138e-15,7.61115925 7.61115925,1.72470207e-15 17,0 C26.3888407,-1.72470207e-15 34,7.61115925 34,17 L34,26 L31,26 L31,17 C31,9.2680135 24.7319865,3 17,3 C9.2680135,3 3,9.2680135 3,17 L3,26 Z" id="path-1"></path>
+        <path d="M3,22 L0,22 L0,17 C-1.14980138e-15,7.61115925 7.61115925,1.72470207e-15 17,0 C26.3888407,-1.72470207e-15 34,7.61115925 34,17 L34,22 L31,22 L31,17 C31,9.2680135 24.7319865,3 17,3 C9.2680135,3 3,9.2680135 3,17 L3,22 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pc" transform="translate(-835.000000, -4105.000000)">
+            <g id="Group-19" transform="translate(835.000000, 4105.000000)">
+                <circle id="Oval-5" stroke="#555555" stroke-width="3" fill-rule="nonzero" cx="17" cy="43" r="10"></circle>
+                <g id="Group-12" transform="translate(20.000000, 0.000000)" fill-rule="nonzero">
+                    <path d="M17,32.0845241 L21.5507144,24.5 L30,24.5 C36.3512746,24.5 41.5,19.3512746 41.5,13 C41.5,6.64872538 36.3512746,1.5 30,1.5 L13,1.5 C6.64872538,1.5 1.5,6.64872538 1.5,13 C1.5,18.8741977 5.92728645,23.7878156 11.7173725,24.4294088 L12.4560415,24.5112599 L17,32.0845241 Z" id="Combined-Shape" stroke="#555555" stroke-width="3"></path>
+                    <rect id="Rectangle-24" fill="#1B62AA" x="11" y="9" width="19" height="3" rx="1.5"></rect>
+                    <rect id="Rectangle-24" fill="#555555" x="11" y="14" width="11" height="3" rx="1.5"></rect>
+                </g>
+                <g id="Rectangle-21" transform="translate(0.000000, 57.000000)">
+                    <mask id="mask-2" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#1B62AA" fill-rule="nonzero" xlink:href="#path-1"></use>
+                </g>
+                <circle id="Oval-5" stroke="#1B62AA" stroke-width="3" fill-rule="nonzero" cx="60" cy="47" r="10"></circle>
+                <g id="Rectangle-21" transform="translate(43.000000, 61.000000)">
+                    <mask id="mask-4" fill="white">
+                        <use xlink:href="#path-3"></use>
+                    </mask>
+                    <use id="Combined-Shape" fill="#555555" fill-rule="nonzero" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

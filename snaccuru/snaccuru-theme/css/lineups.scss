@@ -1,0 +1,167 @@
+#contents{
+  #lineups{
+    margin-top: 120px;
+    padding-top: 80px;
+    padding-bottom:0;
+    position: relative;
+    &::before{
+      content: '';
+      position: absolute;
+      top: 0%;
+      left: 0;
+      width: 150vw;
+      height: 120%;
+      margin: 3% -30vw 0;
+      transform-origin: left center;
+      transform: rotate(-5deg);
+      z-index: 1;
+      background: #f4f4f4;
+      transition: top 2s cubic-bezier(0.455, 0.03, 0.515, 0.955), height 2s;
+    }
+    .section_inner{
+      position: relative;
+      z-index: 10;
+      padding-bottom: 50px;
+      .ttl_wrap{
+        text-align: center;
+      }
+      .slider_wrap{
+        width: 100%;
+        position: relative;
+        height: 400px;
+        #slickSlider{
+          width: calc(275px * 4);
+          height: 380px;
+          position: absolute;
+          top:0;
+          bottom:0;
+          left:0;
+          right:0;
+          margin: auto;
+          .slick-arrow{
+            display: none !important;
+          }
+          .item_box{
+            margin: 0 7.5px;
+            .img_wrap{
+              width: 260px;
+              height: 260px;
+              background: #fff;
+              border-radius: 100%;
+              overflow: hidden;
+            }
+            .txt_wrap{
+              position: relative;
+              z-index: 10;
+              text-align: center;
+              margin-top: -40px;
+              .gategory{
+                display: block;
+                @include dance;
+                font-size: 25px;
+                letter-spacing: 2px;
+                color: #77aa00;
+                margin-bottom: 15px;
+              }
+              .var{
+                display: block;
+                font-size: 14px;
+                letter-spacing: 0.6px;
+                color: #888;
+              }
+              .tags{
+                margin-top: 15px;
+                span{
+                  display: inline-block;
+                  margin: 0 2.5px 5px;
+                  padding: 10px;
+                  color: #fff;
+                  font-size: 12px;
+                  border-radius: 5px;
+                  background: #77aa00;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 1100px){
+    #lineups{
+      margin-top: 80px;
+      .section_inner{
+        position: relative;
+        z-index: 10;
+        padding-bottom: 50px;
+        .ttl_wrap{
+          text-align: center;
+        }
+        .slider_wrap{
+          #slickSlider{
+            width: calc(275px * 3);
+            left:-30px;
+            margin: auto;
+            .item_box{
+              .txt_wrap{
+                position: relative;
+                z-index: 10;
+                text-align: center;
+                margin-top: -40px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 750px){
+    #lineups{
+      margin-top: 0px;
+      padding-top: 60px;
+      padding-bottom:0;
+      .section_inner{
+        padding-bottom: 0;
+        .slider_wrap{
+          width: 100%;
+          position: relative;
+          height: 380px;
+          #slickSlider{
+            width: calc(275px * 1);
+            height: 360px;
+            left: 0;
+            .item_box{
+              .txt_wrap{
+                position: relative;
+                z-index: 10;
+                text-align: center;
+                margin-top: -40px;
+                .gategory{
+                  font-size: 25px;
+                  letter-spacing: 2px;
+                  margin-bottom: 25px;
+                }
+                .var{
+                  font-size: 14px;
+                  letter-spacing: 0.6px;
+                }
+                .tags{
+                  margin-top: 15px;
+                  span{
+                    display: inline-block;
+                    margin: 0 2.5px 5px;
+                    padding: 10px;
+                    color: #fff;
+                    font-size: 10px;
+                    border-radius: 5px;
+                    background: #77aa00;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
