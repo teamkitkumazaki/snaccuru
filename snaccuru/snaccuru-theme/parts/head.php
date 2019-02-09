@@ -31,8 +31,18 @@
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-
   gtag('config', 'UA-134157906-1');
+	function gtag_report_conversion() {
+		var callback = function () {
+		 console.log('get')
+		 $('.wpcf7-form').submit();
+	 };
+	 gtag('event', 'submit', {
+		 'event_category': 'otoiawase',
+		 'event_callback': callback,
+	 });
+return false;
+}
 </script>
 
 	<?php wp_head();?>

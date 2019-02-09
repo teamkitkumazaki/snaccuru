@@ -1,5 +1,8 @@
 $(function() {
 
+  //お問い合わせ送信ボタンのコンバージョン計測処理
+  $('#submitButton').attr('onclick', 'gtag_report_conversion(); return false;')
+
   // ローディングアニメーション
 /*  function loadingAnimation() {
     $(window).on({
