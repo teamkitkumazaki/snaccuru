@@ -43,13 +43,13 @@
           margin-right: 45px;
           @include bgSet;
           &.img01{
-            background-image: url(../img/service_img02.jpg);
+            background-image: url(../img/service_img02.jpg?ver2);
           }
           &.img02{
-            background-image: url(../img/service_img03.jpg);
+            background-image: url(../img/service_img03.jpg?ver2);
           }
           &.img03{
-            background-image: url(../img/service_img04.jpg);
+            background-image: url(../img/service_img04.jpg?ver2);
           }
         }
         .merit_txt{

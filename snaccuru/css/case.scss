@@ -63,7 +63,7 @@
         }
         &.case_left{
           .case_img{
-            background-image: url(../img/case_img01.jpg)
+            background-image: url(../img/case_img01.jpg?ver2);
           }
           .case_ttl{
             padding-left: calc(50vw - 540px);
@@ -78,7 +78,7 @@
         &.case_right{
           margin-top: 60px;
           .case_img{
-            background-image: url(../img/case_img02.jpg)
+            background-image: url(../img/case_img02.jpg?ver2)
           }
           .case_ttl{
             text-align: right;
