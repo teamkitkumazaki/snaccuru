@@ -1,3 +1,8 @@
+#tradeLaw{
+  .header_nav, #humMenu{
+    display: none;
+  }
+}
 #contents{
   .section_inner{
     @include waku;
@@ -16,6 +21,7 @@
         border-bottom: 1px dotted #d8d8d8;
         padding: 10px 0;
         .tl_title{
+          display: block;
           width: 200px;
           padding: 10px 15px;
           box-sizing: border-box;
@@ -36,6 +42,39 @@
           }
           a{
             color: #068acc;
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 740px){
+  #contents{
+    .section_inner{
+      @include waku;
+    }
+    .tokusyou{
+      padding: 80px 0;
+      .tl_contents{
+        .tl_sectitle{
+          margin: 20px 0;
+        }
+        .tl_item{
+          display: block;
+          border-bottom: 0px;
+          padding: 10px 0;
+          .tl_title{
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            background: #f1f1f1;
+            margin-bottom: 10px;
+          }
+          .tl_content{
+            width: 100%;
+            border-left: 0px;
+            padding: 5px 10px;
+            font-size: 14px;
           }
         }
       }

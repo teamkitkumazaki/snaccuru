@@ -5181,6 +5181,9 @@ form input[type="button"] {
     -webkit-box-shadow: none;
     box-shadow: none; }
 
+#tradeLaw .header_nav, #tradeLaw #humMenu {
+  display: none; }
+
 #contents .section_inner {
   max-width: 1080px;
   margin-left: auto;
@@ -5208,6 +5211,7 @@ form input[type="button"] {
     border-bottom: 1px dotted #d8d8d8;
     padding: 10px 0; }
     #contents .tokusyou .tl_contents .tl_item .tl_title {
+      display: block;
       width: 200px;
       padding: 10px 15px;
       -webkit-box-sizing: border-box;
@@ -5228,3 +5232,36 @@ form input[type="button"] {
         margin-bottom: 10px; }
       #contents .tokusyou .tl_contents .tl_item .tl_content a {
         color: #068acc; }
+
+@media screen and (max-width: 740px) {
+  #contents .section_inner {
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto; } }
+  @media screen and (max-width: 740px) and (max-width: 1100px) {
+    #contents .section_inner {
+      max-width: 720px; } }
+  @media screen and (max-width: 740px) and (max-width: 740px) {
+    #contents .section_inner {
+      max-width: 90vw; } }
+
+@media screen and (max-width: 740px) {
+  #contents .tokusyou {
+    padding: 80px 0; }
+    #contents .tokusyou .tl_contents .tl_sectitle {
+      margin: 20px 0; }
+    #contents .tokusyou .tl_contents .tl_item {
+      display: block;
+      border-bottom: 0px;
+      padding: 10px 0; }
+      #contents .tokusyou .tl_contents .tl_item .tl_title {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        background: #f1f1f1;
+        margin-bottom: 10px; }
+      #contents .tokusyou .tl_contents .tl_item .tl_content {
+        width: 100%;
+        border-left: 0px;
+        padding: 5px 10px;
+        font-size: 14px; } }
